@@ -1,0 +1,74 @@
+extends layout
+
+block content
+  .game-container#divgame
+    .header
+      input(type="hidden",id="playerName",value=playerName)
+      .prize 
+        #current-prize
+    .content    
+      .lifelines
+          button#fifty-fifty 50:50
+          button#phone-friend Phone a Friend
+          button#ask-audience Ask the Audience
+      .question-container#question-panel
+        .animate-container#divanimasi
+          h3#winmessage
+          #correct
+        .gameover-container
+          #wrong
+          #losemessage Game Over
+        .question-content#question-content
+          h2#question Welcome to the game!
+          #options.options
+      .panel-container
+        button#iconpanel
+          .arrow-right#arrow
+          .arrow-wrapper-right#arrow-wrapper
+        .prize-container#reward-container
+          .prize-item#divpanel15
+            span.level 15
+            span.amount $1,000,000
+          .prize-item#divpanel14
+            span.level 14
+            span.amount $500,000
+          .prize-item#divpanel13
+            span.level 13
+            span.amount $250,000
+          .prize-item#divpanel12
+            span.level 12
+            span.amount $125,000
+          .prize-item#divpanel11
+            span.level 11
+            span.amount $64,000
+          .prize-item#divpanel10
+            span.level 10
+            span.amount $32,000
+          .prize-item#divpanel9
+            span.level 9
+            span.amount $16,000
+          .prize-item#divpanel8
+            span.level 8
+            span.amount $8,000
+          .prize-item#divpanel7
+            span.level 7
+            span.amount $4,000
+          .prize-item#divpanel6
+            span.level 6
+            span.amount $2,000
+          .prize-item#divpanel5
+            span.level 5
+            span.amount $1,000
+          .prize-item#divpanel4
+            span.level 4
+            span.amount $500
+          .prize-item#divpanel3
+            span.level 3
+            span.amount $300
+          .prize-item#divpanel2
+            span.level 2
+            span.amount $200
+          .prize-item#divpanel1
+            span.level 1
+            span.amount $100
+  script(src='/renderer.js')

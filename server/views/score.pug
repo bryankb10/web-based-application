@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .highscore-container
+    .highscore
+      .table-wrapper
+        .table-header Leaderboard
+        table
+          thead
+            tr
+              th Rank
+              th Name
+              th Score
+          tbody
+            each items in players
+              tr
+                td= items.rank
+                td= items.name
+                td= items.score
+        button.home-button(onclick="window.location.href='/'") Home

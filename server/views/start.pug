@@ -1,0 +1,13 @@
+extends layout
+block content
+  .home-screen
+    .start-screen
+      .start-button-container
+        button#start-game.start-button
+        .instructions Press ENTER to Start
+      .decorative-lights
+        each val in Array(10)
+          .light
+    
+  
+  script(src='/js/start.js')
